@@ -1,8 +1,8 @@
-" You need to have vim 7.* or above
+" You need to have vim 7.* or above,
+" compiled with support for Python, Ruby, Go etc.
 " This is your ~/.vimrc file.
-" At this point you should have Pathogen installed.
-" Start it...
 
+" start pathogen
 execute pathogen#infect()
 
 " Colors
@@ -108,11 +108,11 @@ set clipboard=unnamed
 
 
 " Some python specifics
-" -------------------
-
+"
 " run flake8 on current buffer
 " <F7> is still the default
 autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
+
 
 " run Flake8 check everytime you write Python file
 " autocmd BufWritePost *.py call Flake8() " syntastic error on compile.py
@@ -122,35 +122,9 @@ autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 
-
-" lightline to display git branch
-" and filename on the left
+" Fugitive and Lighline: diplay the current branch and filename
 " ...so painful!
 let g:lightline={'active':{'left':[['mode', 'paste'],['gitbranch','readonly','filename','modified']]},'component_function':{'gitbranch':'fugitive#head'},}
 
 
-
-
-"  PLUGINS TO INCLUDE IN ~/.vim/bundle/
-" After you install pathogen, git clone the following
-" plugins to your ~/.vim/bundle folder
-"
-" 1. ctrlp.vim
-" 2. monokai <colorsheme>
-" 3. mayansmoke <colorscheme>
-" 4. mru <most recent search>
-" 5. lightline.vim <like powerline>
-" 6. nerdtree <yeah, NERDTree>
-" 7. nginx-vim-syntax
-" 8. syntastic
-" 9. vim-bundle-mako
-" 10. vim-coffee-script
-" 11. vim-colors-solarized
-" 12. vim-commentary
-" 13. vim-flake8
-" 14. vim-fugitive
-" 15. vim-go
-" 16. vim-less
-" 17. vim-markdown
-" 18. vim-pug <formerly vim-jade>
-" 19. vim-sensible <I still do not know>
+" Any corrections are welcome.
