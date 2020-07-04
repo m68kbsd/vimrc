@@ -1,5 +1,4 @@
-# my ~/.vimrc back in school
-
+# ~/.vimrc (~2017)
 * You need to have vim v7.0 or above installed.
 * You also need to install Pathogen as your vim dependency manager.
 * Pathogen is installed in ~/.vim/autoload/ directory.
